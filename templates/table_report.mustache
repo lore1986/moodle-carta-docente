@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-5 offset-7">
+      <ul>
+        <li>Total amount of operation performed with Docente plugin:  {{operations}} </li>
+        <li>Total amount: {{amounts}} Euro </li>
+      </ul>
+    </div>
+  </div>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Account Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">User Name</th>
+        <th scope="col">Type</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#trow}}
+          {{> paygw_docente/trow_report}}
+      {{/trow}}
+    </tbody>
+  </table>
+</div>
+
+
